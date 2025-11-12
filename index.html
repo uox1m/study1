@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Обо мне — Резюме</title>
+</head>
+<body>
+  <div class="page top-line">
+    <header>
+      <h1>Обо мне</h1>
+    </header>
+
+    <section class="intro" aria-labelledby="about-me">
+      <img src="ava.jpg" alt="человек за компьютером" />
+      <div>
+        <p>
+          Привет! Меня зовут Владислав, и я начинающий веб-разработчик. Недавно начал изучать HTML и уже создаю свои первые сайты.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="education">
+      <h2 id="education">Мое образование:</h2>
+
+      <table class="education" role="table" aria-label="Образование">
+        <thead>
+          <tr>
+            <th>Год</th>
+            <th>Учебное заведение</th>
+            <th>Специальность</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2014–2018</td>
+            <td>Технический колледж</td>
+            <td>Информатика</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>Курсы веб-разработки</td>
+            <td>Frontend-разработчик</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" aria-labelledby="skills">
+      <h2 id="skills">Мои навыки</h2>
+      <ul class="skills" aria-label="Список навыков">
+        <li>HTML5</li>
+        <li>Основы CSS</li>
+        <li>Работа с хостингом</li>
+        <li>Создание форм</li>
+      </ul>
+
+      <h3 style="margin-top:14px;font-size:18px;">Уровень владения:</h3>
+      <ol class="proficiency">
+        <li>HTML - продвинутый</li>
+        <li>CSS - начальный</li>
+        <li>JavaScript - планирую изучать</li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="projects">
+      <h2 id="projects">Мои проекты</h2>
+      <div class="project">
+        <h3 style="margin:0 0 6px 0;font-size:16px;">Сайт-визитка</h3>
+        <p style="margin:0 0 10px 0;">Мой первый сайт, созданный на курсах.</p>
+      </div>
+
+    </section>
+
+  </div>
+
+  <h1>Мои проекты</h1>
+    
+    <h2>Сайт-визитка</h2>
+    <p>Мой первый сайт, созданный на курсе</p>
+    <a href="#">Посмотреть проект</a>
+    
+    <h2>Сайт пиццерии</h2>
+    <p>Учебный проект с формой заказа</p>
+    <a href="#">Перейти к заказу.</a>
+    
+    <h2>Форма обратной связи</h2>
+    
+    <form>
+        <label>Ваше имя:</label>
+        <input type="text" placeholder="Введите ваше имя">
+
+        <br>
+        
+        <label>Ваш email:</label>
+        <input type="email" placeholder="example@mail.com">
+
+        <br>
+        
+        <label>Тема сообщения:</label>
+        <select>
+            <option>Предложение о работе</option>
+            <!-- Добавьте другие опции, если нужно -->
+        </select>
+
+        <br>
+        
+        <label>Сообщение:</label>
+        <textarea placeholder="Напишите ваше сообщение..."></textarea>
+
+        <br>
+        
+        <label>
+            <input type="checkbox"> Хочу получать новости о новых проектах
+        </label>
+
+        <br>
+        
+        <label>Срочность:</label>
+        <label>
+            <input type="radio" name="urgency" checked> Не срочно
+        </label>
+        <label>
+            <input type="radio" name="urgency"> Срочно
+        </label>
+
+        <br>
+        
+        <button type="submit">Отправить сообщение</button>
+        <button type="reset">Очистить форму</button>
+    </form>
+</body>
+</html>
