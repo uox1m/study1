@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+}
+
+header {
+  background: linear-gradient(135deg, #7b4eff, #5e3eff);
+  color: white;
+  padding: 1.2rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+main {
+  margin-top: 90px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #5e3eff;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.9rem;
+  color: white;
+}
+
+/* Геройская секция */
+.hero {
+  background: linear-gradient(135deg, #7b4eff, #5e3eff);
+  color: white;
+  text-align: center;
+  padding: 10rem 2rem 7rem;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  font-size: 1.25rem;
+  opacity: 0.92;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  padding: 1.1rem 2.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  transition: all 0.3s;
+  box-shadow: 0 8px 20px rgba(255,107,107,0.3);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(255,107,107,0.4);
+}
+
+/* Grid карточки */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 2.2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+}
+
+.card h3 {
+  margin: 1.2rem 0;
+  color: #5e3eff;
+  font-size: 1.4rem;
+}
+
+/* Шаги */
+.steps {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.step {
+  background: #f8f5ff;
+  padding: 2rem;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  box-shadow: 0 6px 20px rgba(123,78,255,0.08);
+  transition: transform 0.3s;
+}
+
+.step:hover {
+  transform: translateX(10px);
+}
+
+.step-number {
+  background: #7b4eff;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Будущее */
+.future {
+  background: linear-gradient(135deg, #7b4eff, #5e3eff);
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.future blockquote {
+  font-size: 1.6rem;
+  font-style: italic;
+  max-width: 900px;
+  margin: 3.5rem auto;
+  opacity: 0.95;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+footer {
+  text-align: center;
+  padding: 3.5rem;
+  background: #f8f5ff;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  nav ul { gap: 1.2rem; font-size: 0.95rem; }
+  .hero { padding: 8rem 1rem 6rem; }
+  h1 { font-size: 2.3rem; }
+  .step { flex-direction: column; text-align: center; }
+  .step-number { margin-bottom: 1rem; }
+}
